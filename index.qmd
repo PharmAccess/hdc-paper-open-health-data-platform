@@ -89,9 +89,9 @@ bibliography: pharmaccess.bib
 
 ### The need for standardized open health data systems
 
-It is a widely held belief in the global health community that digital technologies have an important role to play in strengthening healthcare in low- and middle income countries (LMICs). Digital technologies have the potential to increase the availability, accessibility, acceptability, and quality of health services; make healthcare more preventive, personalised, and mobile; and enfranchise patients and communities, particularly those who are most vulnerable [@kickbusch2021lancet].
+Digital health systems in low- and middle income countries (LMICs) work, but they do not work together. Consider, for example, the current state of digital health in Kenya. It is common practice in health facilities to have two independent data entry systems within a department, acquire administrative and lab systems from different vendors, and for users to both generate reports at the facility and have the data entered manually into the national health information system [@muinga2020digital]. While political and provider willingness to invest in digital health systems is clear, the lack of integration between health information systems and the respective care flows provides a major challenge to harness its potential. Health system users describe a need for digital tools that would improve access to information in clinical settings to guide decisions and ensure timely and appropriate interventions in real time, enabling them to provide high quality care to their patients [@bartlett2021insights]. Yet the current digital landscape has even been coined as ‘echaos’, presenting as a large-scale uncoordinated implementation of digital health tools in Sub-Saharan Africa, with multiple overlapping solutions adding to the staff and resource burden of an already strained health care system [@karamagi2022ehealth].
 
-Yet, to date the global digital health ecosystem is still project-centric, resulting in data fragmentation and technology lock-in, compromising health care delivery [@mehl2023fullstac]. There is no dearth of the number of digital health interventions: sub-Saharan Africa has seen over 700 such projects in the past 10 years. There is, however, a fundamental lack in coordination, integration, scalability, sustainability, and equitable distribution of investments in digital health. Health policymakers and the global health community at large need to urgently institute coordination mechanisms to terminate unending duplication and disjointed vertical implementations and manage solutions for scale [@karamagi2022ehealth].
+In the meantime, constraints to quality care remains a contributing factor in 90% of Kenya’s maternal deaths, with delays in treatment, inadequate clinical skills and insufficient monitoring cited as contributing factors in 33%, 28% and 27% of maternal death cases, respectively, and poor record keeping playing a role in the majority of cases (CHECK REFERENCE: Ministry of Health Kenya, 2017). Improving quality throughout the continuum of maternal healthcare has demonstrably been linked to better outcomes, and there is an opportunity for digital health systems to connect care [@ochieng2024exploring;@dennis2019initiation;@dohmen2022implementing]. The digital landscape is not lacking in number, function, variety, and complexity of digital (maternal) health interventions; but it is lacking in connection and coordination. To date the global digital health ecosystem is still project-centric, resulting in data fragmentation and technology lock-in, compromising health care delivery [@mehl2023fullstac]. Digital technologies have the potential to increase the availability, accessibility, acceptability, and quality of health services; make healthcare more preventive, personalised, and mobile; and enfranchise patients and communities, particularly those who are most vulnerable [@kickbusch2021lancet]. 
 
 To achieve scaleability of digital health interventions, we need to design and implement standardized open health data systems (OHDS) and their associated ecosystems that can support improvements in the wider health sector along five dimensions, namely [@kelley2020digital]:
 
@@ -104,22 +104,22 @@ To achieve scaleability of digital health interventions, we need to design and i
 
 ### Data & analytics functions are essential in open health data systems
 
-Learnings from digital health interventions have shown that improvements along the five aforementioned dimensions are within reach. As an example, in our experience with the MomCare programme, we have demonstrated that routinely collected health data, combined with financial data, can be effectively used to gain insight into the continuity of care, improve clinical adherence whilst maintaining efficiency and affordability of health services in LMICs. By actively coaxing pregnant mothers to undergo 4 antenatal check-ups, outcomes were improved whilst maintaining the average cost of maternal, newborn and child health (MNCH) services [@huisman2022digital;@sanctis2022maintaining;@izudi2023experiences].
+From our experience in implementing digital health interventions, we have shown that improvements along the five aforementioned dimensions are within reach. In our MomCare programme, for example, we have demonstrated that routinely collected health data, combined with financial data, can be effectively used to gain insight into the continuity of care, improve clinical adherence whilst maintaining efficiency and affordability of health services in LMICs. By actively coaxing pregnant mothers to undergo 4 antenatal check-ups, outcomes were improved whilst maintaining the average cost of maternal, newborn and child health (MNCH) services [@huisman2022digital;@sanctis2022maintaining;@izudi2023experiences].
 
-MomCare is critically dependent on the availability of data and analytics functions within its underlying supportive OHDS. For example, to implement the value-based healthcare business logic of MomCare, detailed analysis of patient journeys is required. This functionality is currently not available as a standard; standardized reports that are available, such as DHIS2, contained insufficient information and analytical functions to support intervention that aim to improve continuity of care and adherence to clinical guidelines. As such, a large part of the day-to-day operation of MomCare revolved performaing data and analytics: data acquisition, data integration, analysis etc.
+MomCare is critically dependent on the availability of data and analytics functions within its underlying supportive OHDS. For example, to implement the value-based healthcare business logic of MomCare, detailed analysis of patient journeys is required. This functionality is currently not available as a standard; standardized reports that are available, such as DHIS2, contained insufficient information and analytical functions to support intervention that aim to improve continuity of care and adherence to clinical guidelines. As such, a large part of the day-to-day operation of MomCare revolved performing data and analytics: data acquisition, data integration, analysis etc.
 
-This situation is not unique to MomCare. In fact, many in the global digital health community think that data & analytics services should be an essential capibility of OHDSs going forward. This is exemplified how the OpenHIE reference architecture [@openhie] has been adopted by many sub-Saharan African countries as the blueprint for implementing nation-wide health information exchanges (HIE) [@mamuye2022health], including Nigeria [@dalhatu2023paper], Kenya [@mbugua2021adoption] and Tanzania [@nsaghurwe2021one]. These countries have, as a matter of course, extended the framework to include “data & analytics services” as an additional domain [@mbugua2021adoption;@dalhatu2023paper]. In terms of the often-used distinction between primary and secondary health data use [@cascini2024health], these countries aim to extend OpenHIE beyond it original scope of primary data sharing to also include secondary use of health data for academic research, real-world evidence studies etc. If we are to use the OpenHIE framework for secondary use, supported by data & analytics as well, we need to extend the standards, technologies and architecture to include functionality to do so. The lack of detailed specifications and consensus of this addition to OpenHIE currently stands in the way of development projects that aim to establish more comprehensive platforms to support primary and secondary health data sharing in LMICs.
+This situation is not unique to MomCare. In fact, many in the global digital health community think that data & analytics services should be an essential capibility of OHDSs going forward. This is exemplified how the OpenHIE reference architecture [@openhie] has been adopted by many sub-Saharan African countries as the blueprint for implementing nation-wide health information exchanges (HIE) [@mamuye2022health], including Nigeria [@dalhatu2023paper], Kenya [@mbugua2021adoption] and Tanzania [@nsaghurwe2021one]. These countries have, as a matter of course, extended the framework to include “data & analytics services” as an additional domain [@mbugua2021adoption;@dalhatu2023paper]. In terms of the often-used distinction between primary and secondary health data use [@cascini2024health], these countries aim to extend OpenHIE beyond it original scope of primary data sharing to also include secondary use of health data as a functional requirement towards a learning health system [@witter2022learning]. If we are include secondary data use into the OpenHIE framework we need to extend the standards, technologies and architecture to include data & analytics functionality to do so. The lack of detailed specifications and consensus of this addition to OpenHIE currently stands in the way of development projects that aim to establish more comprehensive platforms to support primary and secondary health data sharing in LMICs.
 
 ### Objects of openness in secondary data sharing
 
-To set the scene of for the main contributions of this viewpoint paper, consider four types of secondary data sharing as shown in @tbl-types-data-sharing, where we follow the research agenda proposed by de Reuver et al. to scrutinize how openness of data platforms can be achieved [@dereuver2022openness].
+To set the scene for the main contributions of this viewpoint paper, consider four types of secondary data sharing as shown in @tbl-types-data-sharing, where we follow the research agenda proposed by de Reuver et al. to scrutinize how openness of data platforms can be achieved [@dereuver2022openness].
 
 
 |   | __Type of data sharing__ | __Relevance to extension of OpenHIE specification__ |
 |:-:|:-------|:-------------|
 | __1__ | Data at the most granular level with which the patient journey (timeline) can be reconstructed and used for various analytic tasks. | The Shared Health Record (SHR) is specified as an operational, real-time transactional data source, distinct from a data warehouse. A seperate specification of data and analytics functions, typically provided by a datawarehouse, is required. |
-| __2__ | Aggregated data, typically used for routine reports and benchmarking. | The Health Management Information System (HMIS) should support Aggregate Data Exchange (ADX) workflow standard. More flexible and extensive workflows are emerging based on FHIR. | __SQL-on-FHIR specification__ [@sql-on-fhir]: provides a standardised approach to make FHIR work well with familiar and efficient SQL engines that are most commonly used in analytical workflows. Builds on FHIRPath [@hl72020fhirpath] expressions in a logical structure to specify things like column names and unnested items. Implementations of this approach are available or forthcoming, including open source implementations such as Pathling [@grimes2022pathling] and commercial offerings like Aidbox [@aidbox].|
-| __3__ | Data analytics modules, that provide secure and privacy-preserving computational environments to work with the data. | Federated learning (FL) [@rieke2020future] and privacy- enhancing technologies (PETs) [@scheibner2021revolutionizing;@jordan2022selecting] provide new paradigms that address the problem of data governance and privacy by training algorithms collaboratively without exchanging the data itself. Requires use of a common data model, such as FHIR, to analyze the data in a collaborative, decentralized fashion. |
+| __2__ | Aggregated data, typically used for routine reports and benchmarking. | The Health Management Information System (HMIS) already includes the Aggregate Data Exchange (ADX) workflow standard. Modern data & analytics standards can support more flexible and extensive workflows, such as  are emerging based on FHIR. |
+| __3__ | Data analytics modules, that provide secure and privacy-preserving computational environments to work with the data. | Federated learning (FL) [@rieke2020future] and privacy- enhancing technologies (PETs) [@scheibner2021revolutionizing;@jordan2022selecting] provide new paradigms that address the problem of data governance and privacy by training algorithms collaboratively without exchanging the data itself. Requires use of a common data model to analyze the data in a collaborative fashion. |
 | __4__ | Trained models that have been derived from the data and can be used stand-alone for decision support. | Increasing need to open source trained AI models [@osi2024open], enabled by technologies such as ONNX [@onnx]. |
 
 : Types of secondary data sharing, and there relevance to the proposed extension of the OpenHIE specification. {#tbl-types-data-sharing .striped .hover .responsive}
@@ -128,9 +128,13 @@ To set the scene of for the main contributions of this viewpoint paper, consider
 
 ### Outline
 
-The main contribution of this paper is to propose how recent standards and open source implementations from the data engineering community can be integrated into the OpenHIE framework. In the following, we first describe how the lakehouse design pattern, being the most widely used data & analytics solution architecture, can be integrated in OpenHIE. To demonstrate the feasibility of this design, we present a proof-of-concept impelementation using open source technologies within the context of the MomCare programme. Code and digital artifacts of this demonstrator is available as supplementary material [TO DO: include links to support GitHub repositories]. Subquently, we compare this solution design with two widely used and operational OpenHIE-compliant open source frameworks, namely the OpenHIM platform ([https://jembi.gitbook.io/openhim-platform/](https://jembi.gitbook.io/openhim-platform/)) and the OnaData platform [https://ona.io/home/products/ona-data/features/](https://ona.io/home/products/ona-data/features/). Finally, we discuss our findings and propose routes for future development.
+The main contribution of this paper is to propose how recent standards and open source implementations from the data engineering & analytics community can be integrated into the OpenHIE framework. In the following, we first describe how the lakehouse design pattern, being the most widely used data & analytics solution architecture, can be integrated in OpenHIE. To demonstrate the feasibility of this design, we present a proof-of-concept impelementation using open source technologies within the context of the MomCare programme. Code and digital artifacts of this demonstrator are available as supplementary material [TO DO: include links to support GitHub repositories].
 
-We take a narrative approach in presenting our design and the case studies, surveying existing scientific studies on OHDSs, focusing on the seminal reports and subsequently searching forward citations. In addition, we have searched the open source repositories (most notably GitHub) and the online communities (OpenHIE community, FHIR community) to search for relevant open standards, technologies and architectures. This paper should not be considered as a proper systematic review. The main contributions of this paper are i) description of a framework for the components of the Data & Analysis Services that builds on current best practices from the data engineering community into the OpenHIE framework; and ii) evaluation of different implementations and design options for various data sharing scenarios within an extended OpenHIE architecture.
+We take a narrative approach in presenting our design, surveying existing scientific studies on OHDSs, focusing on the seminal reports and subsequently searching forward citations. In addition, we have searched the open source repositories (most notably GitHub) and the online communities (OpenHIE community, FHIR community) to search for relevant open standards, technologies and architectures. This paper should not be considered as a proper systematic review.
+
+Finally, we compare this solution design with two widely used and operational OpenHIE-compliant open source frameworks, namely the OpenHIM platform ([https://jembi.gitbook.io/openhim-platform/](https://jembi.gitbook.io/openhim-platform/)) and the OnaData platform [https://ona.io/home/products/ona-data/features/](https://ona.io/home/products/ona-data/features/). We discuss our findings and propose routes for future development.
+
+The main contributions of this paper are i) description of a framework for the components of the Data & Analysis Services that builds on current best practices from the data engineering community into the OpenHIE framework; and ii) evaluation of different implementations and design options for various data sharing scenarios within an extended OpenHIE architecture.
 
 ## Extending OpenHIE to include modern data and analytics standards
 
@@ -140,27 +144,93 @@ The original OpenHIE specification discerns four domains, namely Point-of-Servic
 
 ![Proposed extension of the OpenHIE architecture that includes "Data and Analytics Services" as an additional service domain.](./images/openhie-extended-architecture.png){#fig-ohie}
 
-Following the terminology proposed by Hai et al. [@hai2023data], summarizes how the different zones of the lakehouse architecture can be adapted for healthcare and integrated into the OpeHIE specification. Taking Fast Healthcare Interoperability Resources (FHIR) as the open data standard[^1], we envisage the extended OpenHIE architecture to include a 'OpenHIE Lakehouse' with the following healthcare specific adaptations of the various data & analytics services:
+Following the terminology proposed by Hai et al. [@hai2023data], @fig-ohie summarizes how the different zones of the lakehouse architecture can be adapted for healthcare and integrated into the OpeHIE specification. Taking Fast Healthcare Interoperability Resources (FHIR) as the open data standard[^1], we envisage the extended OpenHIE architecture to include a 'OpenHIE Lakehouse' with the following healthcare specific adaptations of the various data & analytics services:
 
 - **Ingestion Services:** use of FHIR standard to harmonize all incoming healthcare data to a common data model, including metadata extraction and metadata modeling. Should support both single-records streaming ingest as well as bulk data ingestion in batches using the Bulk FHIR API as interface [@mandl2020push;@jones2021landscape]. 
 - **Storage Service:** should support columnar storage engines optimized for analytical workloads. In case of file-based storage, use columnar file formats such as Apache Parquet. In case of databases, prefer open source engines such as Clickhouse or PostgreSQL that also support external, file-based tabels [@pedreira2023composable].
-- **Maintenance:** use one of the open table formats such as Apache Iceberg, Apache Hudi and/or Delta Lake [@jain2023analyzing] to realize dataset organization, data integration, schema evolution and data provenance. Use of SQL-on-FHIR v2 View definitions to facilitate access to FHIR resources in flattened, tabular format [@sql-on-fhir]
+- **Maintenance:** use one of the open table formats such as Apache Iceberg, Apache Hudi and/or Delta Lake [@jain2023analyzing] to realize dataset organization, data integration, schema evolution and data provenance. Use of SQL-on-FHIR v2 View definitions to facilitate access to FHIR resources in flattened, tabular format [@sql-on-fhir].
 - **Exploration:** use on-demand, read-only analytical processing engines to provide a unified querying interface to access the heterogeneously structured data using new dataprocessing technologies such as DuckDB, polars etc. Should support SQL-on-FHIR Runners, such as Pathling, to generate the standardized views on demand.
 
-Strictly speaking, data consumer services are not part of the lakehouse solution design. In practice, these services are implemented using a combination of business intelligence (BI) reporting tools, and interactive development environment (IDE) to perform SQL queries and/or an interactive notebook computing environment [@granger2021jupyter]. In the discussion we will address future support of federated learning and/or secure multiparty computation network.
+Strictly speaking, data consumer services are not part of the lakehouse solution design. In practice, these services are implemented using a combination of business intelligence (BI) reporting tools, and interactive development environment (IDE) to perform SQL queries and/or an interactive notebook computing environment [@granger2021jupyter]. In the discussion we will address the compatibility of this design to support federated learning and/or secure multiparty computation network.
 
 [^1]: We have argued the choice of FHIR as the common data model elsewhere, working paper to be submitted ([link](https://plugin-healthcare.github.io/viewpoint-jimr/)).
 
+In the following we describe how the high-level solution design has been implemented in Momcare. The first iteration describes Momcare Tanzania, the second Momcare Kenya. The demonstrators were also developed in that order. In the narrative of these demonstrators, we highlight key learnings and insights.
 
-### Parking lot: following snippets need reviewing (integrate or discard)
+### Momcare demonstrators
 
-#### SQL-on-FHIR v2 as an intermediate representation for FHIR data in tabular format
+MomCare was launched in Kenya [@huisman2022digital;@sanctis2022maintaining] and Tanzania [@shija2021access;@mrema2021application] in 2017 and 2019 respectively, with the objective to improve health outcomes for maternal and antenatal care. MomCare distinguishes two user groups: mothers are supported during their pregnancy through reminders and surveys, using SMS as the digital mode of engagement. Health workers are equipped with an Android-based application, in which visits, care activities and clinical observations are recorded. Reimbursements of the maternal clinic are based on the data captured with SMS and the app, thereby creating a conditional payment scheme, where providers are partially reimbursed up-front for a fixed bundle of activities, supplemented by bonus payments based on a predefined set of care activities.
+
+In its original form, the MomCare programme used closed digital platforms. In Kenya, M-TIBA is the primary digital platform, on top of which a relatively lightweight custom app has been built as the engagement layer for the health workers [@huisman2022digital]. M-TIBA provides data access through its data warehouse platform for the MomCare programme, however, this is not a standardized, general purpose API. In the case of Tanzania, a stand-alone custom app is used which does not provide an interface of any kind for interacting with the platform [@mrema2021application]. Given these constraints, the first iteration of the MomCare programme used a custom-built data warehouse environment as its main data platform, on which data extractions, transformations and analysis are performed to generate the operational reports. Feedback reports for the health workers, in the form of operational dashboards, are made accessible through the app. Similar reports are provided to the back-office for the periodic reimbursement to the clinics.
+
+Clearly, a more open and scaleable platform was required if MomCare was to be implemented in more regions. This need led to a redesign of the underlying technical infrastructure of the MomCare project. The objectives of this work were in fact to demonstrate a solution design that could support the first three types of data sharing. First, to investigate the viability of using FHIR for bulk data sharing, MomCare Tanzania was used a testbed to assess the complexity and effort required to implement the facade pattern to integrate the legacy system into the FHIR data standard. Using the longitudinal dataset from approximately 28 thousand patient records, FHIR transformations script were developed and deployed using the mediator function of the IOL. The data was transformed into 10 FHIR v4 resources and the conceptual data model of the existing MomCare app could readily be transformed into the FHIR standard using SQL and validated with a Python library [@islam2023fhir]. The largest challenge during the transformation process pertained to the absence of unique business identifiers for patients and healthcare organizations. For patients, either the mobile phone number or the healthcare insurance number was taken, depending on availability. A combination of name, address and latitude/longitude coordinates were used to uniquely identify organizations and locations, as Tanzania does not have a system in place for this purpose.
+
+The second objective was to reproduce existing analytic reports, using the bulk FHIR data format as input. Here, the focus was to standardize the logic required for producing metrics and reports. The transformed and validated data is uploaded into the FHIR server on a daily basis using an automated cloud function. Analysis of bulk data was done by directly reading the standard newline delimited JSON into the Python pandas data analysis library. Cross checking the output with queries on the original data confirmed that the whole data pipeline produced consistent results. For example, the report of the antenatal coverage metric (number of pregnancies with four or more visits) could be reproduced per patient journey and aggregated (per year, per organization etc.) as required for the MomCare reports.
+
+The third objective was to run a technical feasibility test for federated analytics. Using the MPC platform of Roseman Labs, we managed to do aggregations in the blind ...
+TO DO: explain that we managed to reproduce the reports we generated in the clear, but then in the blind. Note, however, that in the remainder we will focus on first two types of data sharing.
+
+TO DO: explain logic of patient-timeline table. Write standard transformation to go from FHIR resources to this standard table. On top of that the actual metrics and reporting. Explain serverless: we wanted to get rid of resource-heavy data visualization tools. This led to the idea of serverless: using duckdb-wasm and pipelines of cloud functions.
+
+
+#### Momcare Tanzania
+
+![Overview of Momcare Tanzania demonstrator.](./images/openhie-momcare-tz.png){#fig-momcare-tanzania}
+
+MomCare Tanzania was operational in Hanang district, which comprises a population of around 275 thousand spread over an area of 3.6 thousand square kilometers. In Hanang, all 33 public and faith-based maternal clinics currently participated in the MomCare programme. @fig-momcare-tanzania shows an overview of the components that were demonstrated in Momcare Tanzania.
+
+##### Implementing FHIR legacy mediators
+
+One of the practical objectives of the Momcare demonstrator was to assess the complexity and effort required to implement the data transformation scripts, and reproduce the existing analytic reports. The data was transformed into 10 FHIR v4 resources as listed in @tbl-data-tanzania with the number of records per resource type. The conceptual data model of the existing MomCare app could readily be transformed into the FHIR standard using SQL and validated with a the fhir.resources Python library [TO DO: add reference].
+
+The largest challenge during the transformation process pertained to the absence of unique business identifiers for patients and healthcare organizations. For patients, either the mobile phone number or the healthcare insurance number was taken, depending on availability. A combination of name, address and latitude/longitude coordinates were used to uniquely identify organizations and locations, as Tanzania does not have a system in place for this purpose.
+
+The transformed and validated data is uploaded into the FHIR server on a daily basis using an automated cloud function. Analysis of bulk data was done by directly reading the standard newline delimited JSON into the Python pandas data analysis library. Cross checking the output with queries on the original data confirmed that the whole data pipeline produced consistent results. For example, the report of the antenatal coverage metric (number of pregnancies with four or more visits) could be reproduced per patient journey and aggregated (per year, per organization etc.) as required for the MomCare reports.
+
+| FHIR v4 Resource | Number of records |
+|:-----------------|:------------------|
+| Patient | 28,161 |
+| Observation | 28,587 |
+| Episode of Care | 20,571 |
+| Organization | 70 |
+| Location | 70 |
+| Encounters | 174,998 |
+| Diagnoses | 157,162 |
+| Procedures | 1,098,129 |
+| Questionnaire | 4 |
+| Questionnaire Response | xxx |
+
+: FHIR Resources from Momcare Tanzania. {#tbl-data-tanzania .striped .hover .responsive}
+
+##### Standardizing reporting through a patient timeline table
+
+![Data processing pipeline to standardize reporting for Momcare.](./images/standardized-reporting.png)
+
+
+##### Generating different reports from the same workflow
+
+
+
+#### Momcare Kenya
+
+
+##### Using SQL-on-FHIR v2 as an standardized tabular view on nested FHIR data
+
+- At the time Momcare Tanzania demonstrator was build, SQL-on-FHIR v2 specification was still non-existant
+- We now have a working version for trial use, hence we migrated the code base from native SQL (DuckDB) to SQL on FHIR. This reduced the complexity of the code significantly, going from xx lines of code SQL to yy lines of code in the SQL-on-FHIR specification for the patient timeline table
 
 The premise of separating the user interface from the execution engine is directly related to the key objective of the SQL-on-FHIR project ([https://build.fhir.org/ig/FHIR/sql-on-fhir-v2/](https://build.fhir.org/ig/FHIR/sql-on-fhir-v2/)), namely to make large-scale analysis of FHIR data accessible to a larger audience, portable between systems and to make FHIR data work well with the best available analytic tools, regardless of the technology stack. However, to use FHIR effectively analysts require a thorough understanding of the specification as FHIR is represented as a graph of resources, with detailed semantics defined for references between resources, data types, terminology, extensions, and many other aspects of the specification.  Most analytic and machine learning use cases require the preparation of FHIR data using transformations and tabular projections from its original form. The task of authoring these transformations and projections is not trivial and there is currently no standard mechanisms to support reuse.
 
 The solution of the SQL-on-FHIR project is to provide a specification for defining tabular, use case-specific views of FHIR data. The view definition and the execution of the view are separated, in such a way that the definition is portable across systems while the execution engine (called runners) are system-specific tools or libraries that apply view definitions to the underlying data layer, optionally making use of annotations to optimize performance.
 
-##### Ingestion
+
+
+### Evaluation of Momcare demonstrators
+
+We now reflect on the key learnings from the two Momcare demonstrators. We discuss each zone separately
+
+
+#### Ingestion
 
 - Default workflow is extraction of data from SHR using Bulk FHIR API. Data contains metadata (incl. FHIR versions) and fully qualified semantics, for example, coding systems. Despite this, metadata extraction and metadata modeling is still required to meet the FAIR requirements. Issues that need to be solved by these services:
 - To prepare for future updates of FHIR versions
@@ -172,14 +242,14 @@ The solution of the SQL-on-FHIR project is to provide a specification for defini
 - We do need different semantic layer, namely with metrics. Explain different types of semantics.
   - The metrics layer same function as CQL. Discuss CQL vs generic metrics layer.
 
-##### Storage
+#### Storage
 
 - File-based:
   - from ndjson to parquet
   - possibly used delta lake for time versioning
   - separation of storage from compute not only for benefits of lower TCO, but also be ready for federated learning and MPC in future
 
-##### Maintenance
+#### Maintenance
 
 - SQL-on-FHIR Views provide new standard to support mADX aggregate reporting !! We need to stress this, because this is an existing OpenHIE workflow
 - Maintenance-related functions remain the same
@@ -188,25 +258,6 @@ The solution of the SQL-on-FHIR project is to provide a specification for defini
   - workflow requirements: Report aggregate data (link): receiver is HMIS, mADX; this is not analytics!
   - Functional requirements: https://guides.ohie.org/arch-spec/openhie-component-specifications-1/openhie-health-management-information-system-hmis
   - Requirements are similar, but implementation differs: Datamodel is non-FHIR, focused on DataValue, which conceptually equates to FHIR Measure
-
-
-
-## Case study of implementations
-
-### PharmAccess demonstrator Momcare programme
-
-MomCare was launched in Kenya [@huisman2022digital;@sanctis2022maintaining] and Tanzania [@shija2021access;@mrema2021application] in 2017 and 2019 respectively, with the objective to improve health outcomes for maternal and antenatal care. MomCare distinguishes two user groups: mothers are supported during their pregnancy through reminders and surveys, using SMS as the digital mode of engagement. Health workers are equipped with an Android-based application, in which visits, care activities and clinical observations are recorded. Reimbursements of the maternal clinic are based on the data captured with SMS and the app, thereby creating a conditional payment scheme, where providers are partially reimbursed up-front for a fixed bundle of activities, supplemented by bonus payments based on a predefined set of care activities.
-
-In its original form, the MomCare programme used closed digital platforms. In Kenya, M-TIBA is the primary digital platform, on top of which a relatively lightweight custom app has been built as the engagement layer for the health workers [@huisman2022digital]. M-TIBA provides data access through its data warehouse platform for the MomCare programme, however, this is not a standardized, general purpose API. In the case of Tanzania, a stand-alone custom app is used which does not provide an interface of any kind for interacting with the platform [@mrema2021application]. Given these constraints, the first iteration of the MomCare programme used a custom-built data warehouse environment as its main data platform, on which data extractions, transformations and analysis are performed to generate the operational reports. Feedback reports for the health workers, in the form of operational dashboards, are made accessible through the app. Similar reports are provided to the back-office for the periodic reimbursement to the clinics.
-
-Clearly, a more open and scaleable platform was required if MomCare was to be implemented in more regions. This need led to a redesign of the underlying technical infrastructure of the MomCare project. The objectives of this work were in fact to demonstrate a solution design that could support the first three types of data sharing. First, to investigate the viability of using FHIR for bulk data sharing, MomCare Tanzania was used a testbed to assess the complexity and effort required to implement the facade pattern to integrate the legacy system into the FHIR data standard. Using the longitudinal dataset from approximately 28 thousand patient records, FHIR transformations script were developed and deployed using the mediator function of the IOL. The data was transformed into 10 FHIR v4 resources and the conceptual data model of the existing MomCare app could readily be transformed into the FHIR standard using SQL and validated with a Python library [@islam2023fhir]. The largest challenge during the transformation process pertained to the absence of unique business identifiers for patients and healthcare organizations. For patients, either the mobile phone number or the healthcare insurance number was taken, depending on availability. A combination of name, address and latitude/longitude coordinates were used to uniquely identify organizations and locations, as Tanzania does not have a system in place for this purpose.
-
-The second objective was to reproduce existing analytic reports, using the bulk FHIR data format as input. Here, the focus was to standardize the logic required for producing metrics and reports. The transformed and validated data is uploaded into the FHIR server on a daily basis using an automated cloud function. Analysis of bulk data was done by directly reading the standard newline delimited JSON into the Python pandas data analysis library. Cross checking the output with queries on the original data confirmed that the whole data pipeline produced consistent results. For example, the report of the antenatal coverage metric (number of pregnancies with four or more visits) could be reproduced per patient journey and aggregated (per year, per organization etc.) as required for the MomCare reports.
-
-TO DO: explain logic of patient-timeline table. Write standard transformation to go from FHIR resources to this standard table. On top of that the actual metrics and reporting. Explain serverless: we wanted to get rid of resource-heavy data visualization tools. This led to the idea of serverless: using duckdb-wasm and pipelines of cloud functions.
-
-The third objective was to run a technical feasibility test for federated analytics. Using the MPC platform of Roseman Labs, we managed to do aggregations in the blind ...
-TO DO: explain that we managed to reproduce the reports we generated in the clear, but then in the blind. Note, however, that in the remainder we will focus on first two types of data sharing.
 
 Based on these experiments, we arrived at the following design for the data & analytics services
 
@@ -224,14 +275,11 @@ Based on these experiments, we arrived at the following design for the data & an
   - duckdb
   - sveltekit
 
-TO DO: Add diagram
-
-
-
+## Discussion
 
 ### Jembi OpenHIM platform
 
-To evaluate the extended OpenHIE architecture described above, we first consider the OpenHIM Platform. The Open Health Information Mediator (OpenHIM, [http://openhim.org/](OpenHIMhttp://openhim.org/))) component is the reference implementation of the Interoperability Layer (IOL) as defined in the OpenHIE specification. The most current version (8.4.2 at the time of writing) provides all the core functions including central point of access for the services of the HIE; routing functions; central logging for auditing and debugging purposes; and orchestration/mediation mechanisms to co-ordinate requests. By extension, the OpenHIM Platform ([https://jembi.gitbook.io/openhim-platform](https://jembi.gitbook.io/openhim-platform)) is a reference implementation of a set of Instant OpenHIE configurations, refered to as 'recipes' in the documentation. In the following we will evaluate the recipe for "a central data repository with a data warehouse" that provides "A FHIR-based Shared Health record linked to a Master Patient Index (MPI) for linking and mathing patient demographics and a default reporting pipeline to transform and visualise FHIR data" ([https://jembi.gitbook.io/openhim-platform/recipes/central-data-repository-with-data-warehousing](https://jembi.gitbook.io/openhim-platform/recipes/central-data-repository-with-data-warehousing)).
+First, we compare the extended OpenHIE architecture described above to the OpenHIM Platform. The Open Health Information Mediator (OpenHIM, [http://openhim.org/](OpenHIMhttp://openhim.org/))) component is the reference implementation of the Interoperability Layer (IOL) as defined in the OpenHIE specification. The most current version (8.4.2 at the time of writing) provides all the core functions including central point of access for the services of the HIE; routing functions; central logging for auditing and debugging purposes; and orchestration/mediation mechanisms to co-ordinate requests. By extension, the OpenHIM Platform ([https://jembi.gitbook.io/openhim-platform](https://jembi.gitbook.io/openhim-platform)) is a reference implementation of a set of Instant OpenHIE configurations, refered to as 'recipes' in the documentation. One such recipe enables instant deployment of "a central data repository with a data warehouse" that provides "A FHIR-based Shared Health record linked to a Master Patient Index (MPI) for linking and mathing patient demographics and a default reporting pipeline to transform and visualise FHIR data" ([https://jembi.gitbook.io/openhim-platform/recipes/central-data-repository-with-data-warehousing](https://jembi.gitbook.io/openhim-platform/recipes/central-data-repository-with-data-warehousing)).
 
 ![Overview of the default data stack of the OpenHIM Platform. The default stack (top, red) consists of Kafka, Clickhouse and Superset. An alternative solution based on the ELK stack is also supported (bottom, orange), consisting of Elasticsearch, Logstash and Kibana.](images/openhim-platform.png){#fig-openhim-platform}
 
@@ -248,14 +296,10 @@ Evaluating these two data stacks, we see the following:
 
 ### ONA OpenSRP 2
 
-Continuing our evaluation of the extended OpenHIE architecture, we can see a different flavor in the implementation driven by Ona. Ona is a social enterprise that has pioneered the adoption of FHIR data standard via the development of OpenSRP2, a FHIR-based data collection app built using Google’s FHIR SDK and focused on enabling offline-first workflows for community-based care. OpenSRP 2 is a complete rewrite of the original OpenSRP application, a global public good maintained by Ona and deployed in XX countries worldwide. 
+Continuing our evaluation of the extended OpenHIE architecture, we can see a different flavor in the implementation of the OpenSRP2 stack, which is a global public good that has been deployed in XX countries worldwide. Ona, a social enterprise based in Nairobi, is the lead developer OpenSRP2, which at the time of writing has been implemented in the field in three countries (Uganda, Liberia, and Madagascar) in collaboration with local Ministries of Health and with international donors such as UNICEF, supporting a variety of different workflows including antenatal care (ANC), postnatal Care (PNC), immunization, and last-mile logistics.
 
-OpenSRP2 applications are currently implemented in the field in three countries (Uganda, Liberia, and Madagascar) in collaboration with local Ministries of Health and with international donors such as UNICEF, supporting a variety of different workflows including antenatal care (ANC), postnatal Care (PNC), immunization, and last-mile logistics. Besides the OpenSRP Android application and HAPI-FHIR backend, in each of its projects Ona also implements a companion set of tools that support analytics and various reporting needs.  
+Based on learnings from previous versions of OpenSRP, the data & analytics stack implemented in OpenSRP2 was designed to support a national-scale implementation of an end-to-end FHIR-based workflow, that start with data collection through an app build on the Open Health Stack Android SDK all the way down to a FHIR-based data & analytics platform. The requirements for data & analytics are shown in @tbl-ona-requirements.
 
-
-##### Requirements for data sharing
-
-Based on years of work in global health, Ona has learned that the data stack implemented to support a national-scale implementation of its FHIR-based application responds to the following requirements.
 
 | Requirement | Rationale |
 |:-----|:--------------|
@@ -275,42 +319,32 @@ Learning from experience in the field and internal research and development, Ona
 [[graphic]]
 
 Core toolings in the stack include: 
-Data ingestion with Airbyte. Ona uses Airbyte as the primary data ingestion tool, leveraging the wide array of connectors that come standard with the application as well as a dedicated suite of connectors developed internally by Ona, including HAPI FHIR, RapidPro, Ona Data, Kobo Toolbox and others.  
-Data storage with Clickhouse. While different health projects have varying requirements, Ona has found success in using Clickhouse as the main analytics data store in its most recent implementations.  Clickhouse supports the scale required for analytics at a national level, as well as the speed that enables cross-application integrations and more real-time analytics. For example, in Madagascar Ona uses its reporting suite to identify facilities with stock in need of maintenance and can trigger the scheduling of a maintenance visit ad hoc. 
-Data transformation with dbt. Following global best practice, Ona leverages dbt to segregate the data warehouse in different levels (staging, marts, metrics), as well as pre-computing complex indicators for ease of reporting and for transmissions into other systems. For example, in Liberia Ona implements OpenSRP at community health worker level, but can aggregate immunization data at facility level in the data warehouse and then push quarterly summary metrics to DHIS2.
-No recommendation on reporting / BI tooling. Ona recognizes that business users have their own strong preferences for BI tooling, and some already have licenses for specific software, so the architecture is flexible to provide easy connections to different BI tools. 
 
-Evaluation
+- Data ingestion with Airbyte. Ona uses Airbyte as the primary data ingestion tool, leveraging the wide array of connectors that come standard with the application as well as a dedicated suite of connectors developed internally by Ona, including HAPI FHIR, RapidPro, Ona Data, Kobo Toolbox and others.  
+- Data storage with Clickhouse. While different health projects have varying requirements, Ona has found success in using Clickhouse as the main analytics data store in its most recent implementations.  Clickhouse supports the scale required for analytics at a national level, as well as the speed that enables cross-application integrations and more real-time analytics. For example, in Madagascar Ona uses its reporting suite to identify facilities with stock in need of maintenance and can trigger the scheduling of a maintenance visit ad hoc. 
+- Data transformation with dbt. Following global best practice, Ona leverages dbt to segregate the data warehouse in different levels (staging, marts, metrics), as well as pre-computing complex indicators for ease of reporting and for transmissions into other systems. For example, in Liberia Ona implements OpenSRP at community health worker level, but can aggregate immunization data at facility level in the data warehouse and then push quarterly summary metrics to DHIS2.
+- No recommendation on reporting / BI tooling. Ona recognizes that business users have their own strong preferences for BI tooling, and some already have licenses for specific software, so the architecture is flexible to provide easy connections to different BI tools. 
 
-Evaluating the data stack, we see the following:
 Use of generic best-of-breed tooling. Ona focused on utilizing Open HIE tools that are widely adopted outside of the global health and development sectors. This approach aims to provide assurance on two main fronts, the ability to handle performance at scale and the long term dependability of the tools, rather than relying on smaller projects with uncertain long term funding or unproven implementations.
 Columnar data warehouse for analytics. The scale of Ona’s project requires the implementation of a dedicated database for analytics. While original data can still be stored as parquet or other file system, being able to ingest it into a relational data store allows to create well defined indicators. Using clickhouse as a tool helps and combine the need accuracy with the speed of reporting as new data is ingested.  
 Strong emphasis on SQL. While Ona has tested and experimented with FHIR-specific tooling, such as the definition of data projections using sql-on-fhir, Ona found that relying on sql for coding business logic remained the faster and most scalable approach.  
 
 In summary, for Ona building analytics with FHIR data looks similar to building analytics with any other type of data. While FHIR provides a clear and standard data model, managing information for most health systems requires custom integration of data between different sources, as well as computing indicators using business logic specific to the needs of the local users. Building upon well established best-of-breed tools allows Ona to implement FHIR applications at scale and provide trusted analytics on top.
 
+### Assessment of design principles
 
-
-
-
-
-
-
-
-## Discussion
-
-Given the solution design, and evaluation of the three case studies, we discuss the pros and cons from different perspectives that we believe are essential design principles to realise solidarity-based OHDSs, namely [TO DO: this is just first shot at formulating our design principles; needs refinement]:
+Given the solution design, and the comparison with the two widely used open source implementations that is backed by an active community, we discuss the pros and cons from different perspectives that we believe are essential design principles to realise solidarity-based OHDSs, namely [TO DO: this is just first shot at formulating our design principles; needs refinement]:
 
 - inclusive-by-design, based on the notions of datasolidarity and maximising autonomy of all future participants in the ecosystem;
 - scaleable-by-design, particularly focusing on downward scaleability to support a decentralized platform topology to allows for bottom-up deployment scenarios (from local care networks --> county-level networks --> national networks) instead of top-down national roll-out;
 - open-by-design, whereby a balance is found to resort to minimal standards and allow for a large diversity of partners and technologies to be used;
 
-### Inclusive-by-design: datasolidarity, FAIRness and autonomy
+#### Inclusive-by-design: datasolidarity, FAIRness and autonomy
 
 - which can be framed within the context of ongoing efforts towards Findable, Accessible, Interoperable and Reusable (FAIR) sharing of health data [@guillot2023fair].
-- equitable data sharing requires more than just FAIRification [@evertz2023what]
+- equitable data sharing requires more than just FAIRification [@evertsz2023what]
 
-### Scaleable-by-design
+#### Scaleable-by-design
 
 Today, many components of the OpenHIE specification are now available as a digital public goods. Typically, these open source components are intended to support deployments in small countries (population up to 10 million) or large NGOs out of the box, and should provide a stepping stone for customized deployments in medium-sized countries (population around 40 million).[^2] To further ease the development, configuration and deployment of health information exchanges, the concept of 'Instant OpenHIE' has been championed to (i) allow implementers to engage with a preconfigured health information exchange solution and running tools (based on the architecture) and test their applicability and functionality with a real health context problem; and (ii) have a packaged reference version of the OpenHIE architecture that is comprised of a set of reference technologies and other appropriate tools that form the building blocks of the health information exchange that can be configured and extended to support particular use cases [@InstantOpenHIEv2]. Besides the core functional components of the OpenHIE architecture, the Instant OpenHIE toolkit allows packaging and integration of generic components such as Identity and Access Managment (IAM) and a reverse proxy gateway. In the following, we will evaluatie three of such configurations, with the aim to conceptualize and evaluate the proposed Data and Analytics Services domain of of the OpenHIE architecture.
 
@@ -331,7 +365,7 @@ We also posit that a decentralized platform is more conducive to realize a solid
 : Number of healthcare facilities in Kenya. Source: Kenya Health Facility Census, Ministry of Health, September 2023. {#tbl-kenya-facilities} 
 
 
-### Open-by-design: mitigating risk and rebalancing asymmetries
+#### Open-by-design: mitigating risk and rebalancing asymmetries
 
 The shift in perspective from digital platforms to data platforms coincides with the paradox of open [@keller2021paradox]. Originally, openness of digital platforms focused on open source and open standards (as shown above for OpenHIE) which by has been superseded by “... conflicts about privacy, economic value extraction, the emergence of artificial intelligence, and the destabilizing effects of dominant platforms on (democratic) societies. Instead of access to information, the control of personal data has emerged in the age of platforms as the critical contention.” [@keller2021paradox]. These conflicts are particularly salient in the healthcare domain, where people are generally willing to share their health data to receive the best care (primary use, which is aligned with the concept of digital platforms), while the attitude towards secondary use of health data (conceptually aligned with a data platform) varies greatly depending on the type and context [@cascini2024health]. The shift in perspective from digital platforms supporting primary data sharing toward data platforms supporting secondary data sharing is one of the key issues surrounding the polemic of data spaces [@otto2022designing] and data solidarity [@kickbusch2021lancet;@prainsack2022data;@prainsack2023beyond;@purtova2023data].
 
@@ -387,16 +421,5 @@ AP/ONA received funding from PharmAccess to develop an improved version of one o
 | PET | Privacy-enhancing technologies |
 | OHDS | Open health data system |
 | SHR | Shared Health Record |
-
-
-
-
-
-
-
-
-
-
-
 
  
